@@ -1,0 +1,6 @@
+name: PrisonEnchantsAddon
+version: 1.0-SNAPSHOT
+main: me.christo.enchants.Main
+authors: [ Christo ]
+description: UltraPrisonCore Enchants!
+website: http://www.devchristo.com/
