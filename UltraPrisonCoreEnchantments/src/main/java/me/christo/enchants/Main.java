@@ -1,12 +1,14 @@
 package me.christo.enchants;
 
+import me.christo.enchants.Enchantments.GemFinder;
 import me.christo.enchants.Enchantments.TrophyFinder;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Main extends JavaPlugin {
 
-    private TrophyFinder enchant;
+    private TrophyFinder trophy;
+    private GemFinder gemFinder;
 
     @Override
     public void onEnable() {
@@ -18,9 +20,11 @@ public final class Main extends JavaPlugin {
             this.getServer().getPluginManager().disablePlugin(this);
         }
 
-        this.enchant = new TrophyFinder();
+        this.gemFinder = new GemFinder();
+        this.trophy = new TrophyFinder();
 
-        this.enchant.register();
+        this.gemFinder.register();
+        this.trophy.register();
 
     }
 
